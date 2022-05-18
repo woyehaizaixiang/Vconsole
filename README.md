@@ -9,7 +9,7 @@ Vconsole for flutter.
 ## 配置依赖包
 ```
 dependencies:
-  vconsole: ^0.0.2
+  vconsole: ^0.0.3
 ```
 
 ## 使用
