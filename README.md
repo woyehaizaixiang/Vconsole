@@ -1,4 +1,4 @@
-# ds_bridge
+# vconsole
 
 Vconsole for flutter.
 
@@ -44,7 +44,7 @@ class WebviewPage extends StatefulWidget {
 }
 
 class _WebviewPageState extends State<WebviewPage> {
-  String _title = 'ds_bridge';
+  String _title = 'vconsole';
   WebViewController _webViewController;
 
   @override
