@@ -9,7 +9,15 @@ Vconsole for flutter.
 ## 配置依赖包
 ```
 dependencies:
-  vconsole: ^0.0.1
+  vconsole: ^0.0.2
+```
+
+## 使用
+```
+// import vconsole
+import 'package:vconsole/vconsole.dart';
+// onPageStarted add vconsole
+Vconsole(_webViewController).dispatch();
 ```
 
 ## 例子
@@ -91,7 +99,7 @@ class _WebviewPageState extends State<WebviewPage> {
         onPageStarted: (String url) {
           if (url.startsWith("mailto") || url.startsWith("tel") || url.startsWith("http") || url.startsWith("https")) {
             // add vconsole
-            Vconsole(_webViewController);
+            Vconsole(_webViewController).dispatch();
           } else {
             _webViewController.goBack();
           }
